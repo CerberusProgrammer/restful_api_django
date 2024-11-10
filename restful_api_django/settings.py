@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'logistico.product',
+    'logistico.subasta',
     'django_filters',
 ]
 

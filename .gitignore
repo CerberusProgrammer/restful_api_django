@@ -4,4 +4,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-**/migrations/
+**migrations/
+**staticfiles/
+**media/
