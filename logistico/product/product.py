@@ -11,3 +11,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        db_table = 'producto'
+        indexes = [
+            models.Index(fields=['name'], name='idx_name'),
+            models.Index(fields=['price'], name='idx_price'),
+            models.Index(fields=['state'], name='idx_state'),
+            models.Index(fields=['creation_date'], name='idx_creation_date'),
+            models.Index(fields=['modification_date'], name='idx_modification_date'),
+        ]
